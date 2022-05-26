@@ -1,0 +1,78 @@
+<resources>
+    <string name="in">в</string>
+    <string name="repeat">Повторять</string>
+    <string name="delete">Удалить</string>
+    <string name="button_load">Загрузить</string>
+    <string name="button_save">Сохранить</string>
+    <string name="link_getter_text">Введите ссылку на изображение</string>
+    <string name="color_choose_text">Выберите цвет</string>
+    <string name="app_name">My Habits</string>
+    <string name="hint_habit_name">Название</string>
+    <string name="habit_name">Название</string>
+    <string name="description">Описание</string>
+    <string name="first_option">Полезная</string>
+    <string name="second_option">Бесполезная</string>
+    <string name="priority_text">Приоритет</string>
+    <string name="text_period">Повторять</string>
+    <string name="text_frequency">раз в</string>
+    <string name="text_days">дней</string>
+    <string name="bad_habit">Вредная</string>
+    <string name="good_habit">Полезная</string>
+    <string name="bad_habits">Вредные</string>
+    <string name="good_habits">Полезные</string>
+    <string name="normal_habit">Нормальная</string>
+    <string name="information">Информация</string>
+    <string name="habits">Привычки</string>
+    <string name="greeting">Привычки от ромчика</string>
+    <string name="type_text">Тип</string>
+    <string name="open_drawer" />
+    <string name="close_drawer" />
+    <string name="often_text">Периодичность</string>
+    <string name="delete_button">Удалить</string>
+    <string name="error_text">Заполните все поля</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Мои привычки</string>
+    <string name="nav_header_subtitle">koksenvai@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_habits">Мои привычки</string>
+    <string name="create_habit_title">Создаь привчку</string>
+    <string name="menu_info">Информация о приложении</string>
+    <string name="high">Высокий</string>
+    <string name="medium">Средний</string>
+    <string name="low">Низкий</string>
+    <string name="change_habit">Изменить привычку</string>
+    <string name="useful_habit_not_enough_message">Нужно сделать еще %s раз</string>
+    <string name="harmful_habit_not_enough_message">Можно сделать еще %s раз</string>
+    <string name="useful_habit_enough_message">Ure are breathtaking!</string>
+    <string name="harmful_habit_enough_message">Хватит это делать!</string>
+    <string name="update_button_text">Update</string>
+    <string name="delete_button_text">Delete</string>
+
+
+    <string-array name="sort_parameters">
+        <item>Дата добавления</item>
+        <item>Частота</item>
+        <item>Приоритет</item>
+    </string-array >
+
+    <string-array name="priorities">
+        <item>Низкий</item>
+        <item>Средний</item>
+        <item>Высокий</item>
+    </string-array >
+
+    <plurals name="times">
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="other">%d дней</item>
+    </plurals>
+
+    <plurals name="count">
+        <item quantity="one">%d раз</item>
+        <item quantity="few">%d раза</item>
+        <item quantity="other">%d раз</item>
+    </plurals>
+
+</resources>

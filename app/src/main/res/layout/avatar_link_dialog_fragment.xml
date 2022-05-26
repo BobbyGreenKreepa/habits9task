@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:padding="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/link_getter_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/large_margin"
+            android:layout_marginTop="8dp"
+            android:text="@string/link_getter_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edit_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textUri"
+            android:minHeight="48dp"
+            android:textColor="@color/colorHint"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/link_getter_description"
+            app:layout_constraintTop_toBottomOf="@+id/link_getter_description" />
+
+        <Button
+            android:id="@+id/download_link_button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:text="@string/button_load"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/edit_link"
+            app:layout_constraintTop_toBottomOf="@+id/edit_link" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

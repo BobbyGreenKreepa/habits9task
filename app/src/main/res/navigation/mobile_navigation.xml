@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_habit_list">
+
+    <fragment
+        android:id="@+id/nav_habit_list"
+        android:name="com.example.habitsclean.ui.list.ViewPagerFragment"
+        android:label="@string/menu_habits"
+        tools:layout="@layout/fragment_habits_list">
+        <action
+            android:id="@+id/action_nav_home_to_redactorFragment"
+            app:destination="@id/redactorFragment">
+
+            <argument
+                android:name="habit"
+                app:argType="com.example.domain.model.Habit" />
+
+        </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/redactorFragment"
+        android:name="com.example.habitsclean.ui.redactor.RedactorFragment"
+        android:label="@string/create_habit_title">
+        <action
+            android:id="@+id/action_redactor_to_list"
+            app:destination="@id/nav_habit_list"
+            app:popUpTo="@+id/nav_habit_list"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.example.habitsclean.ui.info.InfoFragment"
+        android:label="InfoFragment" />
+
+</navigation>
